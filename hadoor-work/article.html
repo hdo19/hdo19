@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b6cfb">
+  <meta name="description" content="شرح تقني من حدور تك">
+  <title>الشرح | حدور تك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .article-page{padding:42px 0 80px;min-height:70vh}
+    .article-page .article-dialog{width:min(920px,100%);max-height:none;margin:auto;overflow:visible;box-shadow:none;border:1px solid var(--line)}
+    .article-breadcrumb{margin-bottom:18px}
+    .article-breadcrumb a{color:var(--blue);font-weight:800;text-decoration:none}
+    .article-back{display:inline-flex;align-items:center;gap:7px;margin-bottom:22px}
+    .article-loading{text-align:center;padding:70px 20px;color:var(--muted)}
+    @media(max-width:700px){.article-page{padding:24px 0 55px}.article-page .article-dialog{padding:20px;border-radius:16px}}
+  </style>
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> أهلاً بك في حدور تك — المعرفة التقنية بأسلوب مبسّط</div>
+  <header class="site-header"><div class="container nav-wrap">
+    <a class="brand" href="/" aria-label="حدور تك الرئيسية"><span class="brand-mark">H</span><span><strong>حدور تك</strong><small>HADOOR TECH</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false"><i></i><i></i><i></i></button>
+    <nav class="main-nav" id="mainNav"><a href="/">الرئيسية</a><a href="/#tutorials">الشروحات</a><a href="/#categories">الأقسام</a><a href="/#about">عن القناة</a><a class="nav-contact" href="mailto:haider.abaas6g@gmail.com">تواصل معنا</a></nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="تبديل المظهر">☾</button>
+  </div></header>
+
+  <main class="article-page">
+    <div class="container">
+      <div class="article-breadcrumb"><a href="/">الرئيسية</a> <span>←</span> الشرح</div>
+      <a class="btn btn-ghost article-back" href="/">← العودة إلى الشروحات</a>
+      <article class="article-dialog" id="articleContent" aria-live="polite">
+        <div class="article-loading">جارٍ تحميل الشرح…</div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="/"><span class="brand-mark">H</span><span><strong>حدور تك</strong><small>HADOOR TECH</small></span></a><p>© <span id="year"></span> حدور تك. جميع الحقوق محفوظة.</p><a href="https://www.youtube.com/@HadoorTech/videos" target="_blank" rel="noopener">YouTube ↗</a></div></footer>
+  <script type="module" src="/article.js"></script>
+</body></html>
